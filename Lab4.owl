@@ -1,0 +1,631 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2020/4/lab4"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/user/ontologies/2020/4/lab4">
+    <Prefix name="" IRI="http://www.semanticweb.org/user/ontologies/2020/4/lab4"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <Literal>Albert Pavlov</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <Literal>Andrej Loparev</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <Literal>Daniel Wunderlich</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
+        <Literal>Creative Commons Attribution 3.0 (CC BY 3.0)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal>Semantic Modeling - Lab 4</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Course"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Group"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Internet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lab"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lecture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Professor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Software"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Student"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#assigned_Students_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#created_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#exercise_to_do"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#held_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#held_on"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#includes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_distributed_on"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#needs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#participates_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requires"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#writes_lab_in"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#due_week"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_matriculation_number"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#is_in_course"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#presented_on"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#had_the_Bachelor&apos;s_topic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Albert_Pavlov"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GeoNames1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Google_Docs"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hello_Semantic_Web1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hello_Semantic_Web2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Internet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Java"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Maxi_Musterfrau"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Prof._Dr._Debora_Weber-Wulff"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Semantic_Modeling_Course"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lab_1:_GeoNames"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lab_2:_Hello_Semantic_Web"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lec_1:_Introduction_to_Semantic_Modelling_and_the_Semantic_Web"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lec_2:_What_is_the_Semantic_Web_supposed_to_be?_What_can_I_do_with_it?"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:Week"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Group"/>
+        <Class IRI="#Course"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lab"/>
+        <Class IRI="#Course"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lecture"/>
+        <Class IRI="#Course"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Professor"/>
+        <Class IRI="#Course"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Student"/>
+        <Class IRI="#Course"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Albert_Pavlov"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Group"/>
+        <NamedIndividual IRI="#GeoNames1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Software"/>
+        <NamedIndividual IRI="#Google_Docs"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Group"/>
+        <NamedIndividual IRI="#Hello_Semantic_Web1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Group"/>
+        <NamedIndividual IRI="#Hello_Semantic_Web2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Internet"/>
+        <NamedIndividual IRI="#Internet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Software"/>
+        <NamedIndividual IRI="#Java"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Maxi_Musterfrau"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Professor"/>
+        <NamedIndividual IRI="#Prof._Dr._Debora_Weber-Wulff"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#Semantic_Modeling_Course"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lab"/>
+        <NamedIndividual IRI="#Lab_1:_GeoNames"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lab"/>
+        <NamedIndividual IRI="#Lab_2:_Hello_Semantic_Web"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lecture"/>
+        <NamedIndividual IRI="#Lec_1:_Introduction_to_Semantic_Modelling_and_the_Semantic_Web"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lecture"/>
+        <NamedIndividual IRI="#Lec_2:_What_is_the_Semantic_Web_supposed_to_be?_What_can_I_do_with_it?"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participates_in"/>
+        <NamedIndividual IRI="#Albert_Pavlov"/>
+        <NamedIndividual IRI="#Semantic_Modeling_Course"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has"/>
+        <NamedIndividual IRI="#GeoNames1"/>
+        <NamedIndividual IRI="#Maxi_Musterfrau"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#writes_lab_in"/>
+        <NamedIndividual IRI="#GeoNames1"/>
+        <NamedIndividual IRI="#Google_Docs"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#needs"/>
+        <NamedIndividual IRI="#Google_Docs"/>
+        <NamedIndividual IRI="#Internet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has"/>
+        <NamedIndividual IRI="#Hello_Semantic_Web1"/>
+        <NamedIndividual IRI="#Maxi_Musterfrau"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#writes_lab_in"/>
+        <NamedIndividual IRI="#Hello_Semantic_Web1"/>
+        <NamedIndividual IRI="#Google_Docs"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has"/>
+        <NamedIndividual IRI="#Hello_Semantic_Web2"/>
+        <NamedIndividual IRI="#Albert_Pavlov"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#writes_lab_in"/>
+        <NamedIndividual IRI="#Hello_Semantic_Web2"/>
+        <NamedIndividual IRI="#Google_Docs"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_distributed_on"/>
+        <NamedIndividual IRI="#Java"/>
+        <NamedIndividual IRI="#Internet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#participates_in"/>
+        <NamedIndividual IRI="#Maxi_Musterfrau"/>
+        <NamedIndividual IRI="#Semantic_Modeling_Course"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#assigned_Students_to"/>
+        <NamedIndividual IRI="#Prof._Dr._Debora_Weber-Wulff"/>
+        <NamedIndividual IRI="#GeoNames1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#assigned_Students_to"/>
+        <NamedIndividual IRI="#Prof._Dr._Debora_Weber-Wulff"/>
+        <NamedIndividual IRI="#Hello_Semantic_Web1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#assigned_Students_to"/>
+        <NamedIndividual IRI="#Prof._Dr._Debora_Weber-Wulff"/>
+        <NamedIndividual IRI="#Hello_Semantic_Web2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#held_by"/>
+        <NamedIndividual IRI="#Semantic_Modeling_Course"/>
+        <NamedIndividual IRI="#Prof._Dr._Debora_Weber-Wulff"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#held_on"/>
+        <NamedIndividual IRI="#Semantic_Modeling_Course"/>
+        <NamedIndividual IRI="#Internet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#includes"/>
+        <NamedIndividual IRI="#Semantic_Modeling_Course"/>
+        <NamedIndividual IRI="#GeoNames1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#includes"/>
+        <NamedIndividual IRI="#Semantic_Modeling_Course"/>
+        <NamedIndividual IRI="#Hello_Semantic_Web1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#includes"/>
+        <NamedIndividual IRI="#Semantic_Modeling_Course"/>
+        <NamedIndividual IRI="#Hello_Semantic_Web2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#includes"/>
+        <NamedIndividual IRI="#Semantic_Modeling_Course"/>
+        <NamedIndividual IRI="#Lab_1:_GeoNames"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#includes"/>
+        <NamedIndividual IRI="#Semantic_Modeling_Course"/>
+        <NamedIndividual IRI="#Lab_2:_Hello_Semantic_Web"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#includes"/>
+        <NamedIndividual IRI="#Semantic_Modeling_Course"/>
+        <NamedIndividual IRI="#Lec_1:_Introduction_to_Semantic_Modelling_and_the_Semantic_Web"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#includes"/>
+        <NamedIndividual IRI="#Semantic_Modeling_Course"/>
+        <NamedIndividual IRI="#Lec_2:_What_is_the_Semantic_Web_supposed_to_be?_What_can_I_do_with_it?"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#created_by"/>
+        <NamedIndividual IRI="#Lab_1:_GeoNames"/>
+        <NamedIndividual IRI="#GeoNames1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#created_by"/>
+        <NamedIndividual IRI="#Lab_2:_Hello_Semantic_Web"/>
+        <NamedIndividual IRI="#Hello_Semantic_Web1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#created_by"/>
+        <NamedIndividual IRI="#Lab_2:_Hello_Semantic_Web"/>
+        <NamedIndividual IRI="#Hello_Semantic_Web2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requires"/>
+        <NamedIndividual IRI="#Lab_2:_Hello_Semantic_Web"/>
+        <NamedIndividual IRI="#Java"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#exercise_to_do"/>
+        <NamedIndividual IRI="#Lec_1:_Introduction_to_Semantic_Modelling_and_the_Semantic_Web"/>
+        <NamedIndividual IRI="#Lab_1:_GeoNames"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#exercise_to_do"/>
+        <NamedIndividual IRI="#Lec_2:_What_is_the_Semantic_Web_supposed_to_be?_What_can_I_do_with_it?"/>
+        <NamedIndividual IRI="#Lab_2:_Hello_Semantic_Web"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_matriculation_number"/>
+        <NamedIndividual IRI="#Albert_Pavlov"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">012346</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#is_in_course"/>
+        <NamedIndividual IRI="#Albert_Pavlov"/>
+        <Literal>AI</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#had_the_Bachelor&apos;s_topic"/>
+        <NamedIndividual IRI="#Albert_Pavlov"/>
+        <Literal>Laserscansystem</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_matriculation_number"/>
+        <NamedIndividual IRI="#Maxi_Musterfrau"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">012345</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#is_in_course"/>
+        <NamedIndividual IRI="#Maxi_Musterfrau"/>
+        <Literal>IMI</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#had_the_Bachelor&apos;s_topic"/>
+        <NamedIndividual IRI="#Maxi_Musterfrau"/>
+        <Literal>Ebay</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#due_week"/>
+        <NamedIndividual IRI="#Lab_1:_GeoNames"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#due_week"/>
+        <NamedIndividual IRI="#Lab_2:_Hello_Semantic_Web"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#presented_on"/>
+        <NamedIndividual IRI="#Lec_1:_Introduction_to_Semantic_Modelling_and_the_Semantic_Web"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-06T15:45:00+00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#presented_on"/>
+        <NamedIndividual IRI="#Lec_2:_What_is_the_Semantic_Web_supposed_to_be?_What_can_I_do_with_it?"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2020-04-20T15:45:00+00:00</Literal>
+    </DataPropertyAssertion>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#assigned_Students_to"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#created_by"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#exercise_to_do"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#has"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#held_by"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#held_on"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#includes"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#is_distributed_on"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#needs"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#participates_in"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#requires"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#writes_lab_in"/>
+    </AsymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#assigned_Students_to"/>
+        <Class IRI="#Professor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#created_by"/>
+        <Class IRI="#Lab"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#exercise_to_do"/>
+        <Class IRI="#Lecture"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has"/>
+        <Class IRI="#Group"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#held_by"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#held_on"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#includes"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_distributed_on"/>
+        <Class IRI="#Software"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#needs"/>
+        <Class IRI="#Software"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#participates_in"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#requires"/>
+        <Class IRI="#Lab"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#writes_lab_in"/>
+        <Class IRI="#Group"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#assigned_Students_to"/>
+        <Class IRI="#Group"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#created_by"/>
+        <Class IRI="#Group"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#exercise_to_do"/>
+        <Class IRI="#Lab"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#held_by"/>
+        <Class IRI="#Professor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#held_on"/>
+        <Class IRI="#Internet"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#includes"/>
+        <Class IRI="#Lab"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#includes"/>
+        <Class IRI="#Lecture"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_distributed_on"/>
+        <Class IRI="#Internet"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#needs"/>
+        <Class IRI="#Internet"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#participates_in"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requires"/>
+        <Class IRI="#Software"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#writes_lab_in"/>
+        <Class IRI="#Software"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#due_week"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#has_matriculation_number"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#is_in_course"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#presented_on"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#had_the_Bachelor&apos;s_topic"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#due_week"/>
+        <Class IRI="#Lab"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#has_matriculation_number"/>
+        <Class IRI="#Student"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#is_in_course"/>
+        <Class IRI="#Student"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#presented_on"/>
+        <Class IRI="#Lecture"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#had_the_Bachelor&apos;s_topic"/>
+        <Class IRI="#Student"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#due_week"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:int"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">52</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#has_matriculation_number"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#is_in_course"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#presented_on"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#had_the_Bachelor&apos;s_topic"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
